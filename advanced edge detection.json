@@ -1,0 +1,306 @@
+{
+  "software": "com.hardcodedjoy.iototoy",
+  "version": "1.0.5",
+  "displayMode": "diagram",
+  "diagramOffsetX": -9.955556,
+  "diagramOffsetY": -99.55556,
+  "diagramBlocks": [
+    {
+      "type": "camera",
+      "top": 179.2,
+      "bottom": 238.93333,
+      "left": 119.46667,
+      "right": 179.2,
+      "inputPorts": [
+        {
+          "name": "w"
+        },
+        {
+          "name": "h"
+        },
+        {
+          "name": "f"
+        },
+        {
+          "name": "exp"
+        },
+        {
+          "name": "iso"
+        },
+        {
+          "name": "id"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 2,
+              "port": 0
+            },
+            {
+              "block": 4,
+              "port": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "constant",
+      "top": 179.2,
+      "bottom": 238.93333,
+      "left": 29.866667,
+      "right": 89.6,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 0,
+              "port": 0
+            },
+            {
+              "block": 0,
+              "port": 1
+            }
+          ]
+        }
+      ],
+      "dataType": "int",
+      "dataRepresentation": "dec",
+      "value": 256
+    },
+    {
+      "type": "image_filter_sobel",
+      "top": 348.44446,
+      "bottom": 408.17776,
+      "left": 119.46667,
+      "right": 179.2,
+      "inputPorts": [
+        {
+          "name": "in"
+        },
+        {
+          "name": "ker"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 5,
+              "port": 0
+            },
+            {
+              "block": 11,
+              "port": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "constant",
+      "top": 348.44446,
+      "bottom": 408.17776,
+      "left": 29.866667,
+      "right": 89.6,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 2,
+              "port": 1
+            }
+          ]
+        }
+      ],
+      "dataType": "int",
+      "dataRepresentation": "dec",
+      "value": 5
+    },
+    {
+      "type": "display",
+      "top": 129.42223,
+      "bottom": 278.75555,
+      "left": 219.02222,
+      "right": 368.35556,
+      "inputPorts": [
+        {
+          "name": "in"
+        }
+      ],
+      "outputPorts": [
+        
+      ]
+    },
+    {
+      "type": "image_filter_binary",
+      "top": 557.5111,
+      "bottom": 617.24445,
+      "left": 119.46667,
+      "right": 179.2,
+      "inputPorts": [
+        {
+          "name": "in"
+        },
+        {
+          "name": "fg"
+        },
+        {
+          "name": "bg"
+        },
+        {
+          "name": "th"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 6,
+              "port": 0
+            },
+            {
+              "block": 7,
+              "port": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image_filter_fill_holes",
+      "top": 686.93335,
+      "bottom": 746.6667,
+      "left": 119.46667,
+      "right": 179.2,
+      "inputPorts": [
+        {
+          "name": "in"
+        },
+        {
+          "name": "col"
+        },
+        {
+          "name": "px"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 8,
+              "port": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "display",
+      "top": 467.9111,
+      "bottom": 617.24445,
+      "left": 219.02222,
+      "right": 368.35556,
+      "inputPorts": [
+        {
+          "name": "in"
+        }
+      ],
+      "outputPorts": [
+        
+      ]
+    },
+    {
+      "type": "display",
+      "top": 637.1556,
+      "bottom": 786.4889,
+      "left": 219.02222,
+      "right": 368.35556,
+      "inputPorts": [
+        {
+          "name": "in"
+        }
+      ],
+      "outputPorts": [
+        
+      ]
+    },
+    {
+      "type": "constant",
+      "top": 557.5111,
+      "bottom": 617.24445,
+      "left": 29.866667,
+      "right": 89.6,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 5,
+              "port": 3
+            }
+          ]
+        }
+      ],
+      "dataType": "float",
+      "dataRepresentation": "null",
+      "value": 0.1
+    },
+    {
+      "type": "constant",
+      "top": 686.93335,
+      "bottom": 746.6667,
+      "left": 29.866667,
+      "right": 89.6,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 6,
+              "port": 2
+            }
+          ]
+        }
+      ],
+      "dataType": "int",
+      "dataRepresentation": "dec",
+      "value": 100
+    },
+    {
+      "type": "display",
+      "top": 298.66666,
+      "bottom": 448.0,
+      "left": 219.02222,
+      "right": 368.35556,
+      "inputPorts": [
+        {
+          "name": "in"
+        }
+      ],
+      "outputPorts": [
+        
+      ]
+    }
+  ]
+}
