@@ -2,6 +2,8 @@
 
 Real-time **Edge Detection and Morphological Filtering** workflow, converting a live camera stream into a cleaned binary mask.
 
+<img src="Screenshot_20260209_193630_IoToToy.jpg" width="240" alt="Visual diagram of the audio spectrum analyzer">
+
 ## ⚙️ How it Works
 
 The diagram connects 12 functional blocks to process video data through the following stages:
